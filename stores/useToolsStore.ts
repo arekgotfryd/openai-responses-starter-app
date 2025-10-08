@@ -72,7 +72,7 @@ const useToolsStore = create<StoreState>()(
       webSearchConfig: {
         user_location: {
           type: "approximate",
-          country: "",
+          country: "US",
           city: "",
           region: "",
         },
@@ -88,7 +88,7 @@ const useToolsStore = create<StoreState>()(
       setFileSearchEnabled: (enabled) => {
         set({ fileSearchEnabled: enabled });
       },
-      webSearchEnabled: false,
+      webSearchEnabled: true,
       setWebSearchEnabled: (enabled) => {
         set({ webSearchEnabled: enabled });
       },

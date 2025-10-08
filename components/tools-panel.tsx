@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 // import FileSearchSetup from "./file-search-setup";
-import WebSearchConfig from "./websearch-config";
-import FunctionsView from "./functions-view";
+// import WebSearchConfig from "./websearch-config";
+// import FunctionsView from "./functions-view";
 // import McpConfig from "./mcp-config";
-import PanelConfig from "./panel-config";
+// import PanelConfig from "./panel-config";
 import useToolsStore from "@/stores/useToolsStore";
 // import GoogleIntegrationPanel from "@/components/google-integration";
 
@@ -12,10 +12,10 @@ export default function ContextPanel() {
   const {
     // fileSearchEnabled,
     // setFileSearchEnabled,
-    webSearchEnabled,
-    setWebSearchEnabled,
-    functionsEnabled,
-    setFunctionsEnabled,
+    // webSearchEnabled,
+    // setWebSearchEnabled,
+    // functionsEnabled,
+    // setFunctionsEnabled,
     // googleIntegrationEnabled,
     // setGoogleIntegrationEnabled,
     // mcpEnabled,
@@ -42,28 +42,26 @@ export default function ContextPanel() {
         >
           <FileSearchSetup />
         </PanelConfig> */}
-        <PanelConfig
+        {/* <PanelConfig
           title="Web Search"
-          tooltip="Allows to search the web"
+          tooltip="Allows to search the web (configured for US)"
           enabled={webSearchEnabled}
           setEnabled={setWebSearchEnabled}
-        >
-          <WebSearchConfig />
-        </PanelConfig>
+        /> */}
         {/* <PanelConfig
           title="Code Interpreter"
           tooltip="Allows the assistant to run Python code"
           enabled={codeInterpreterEnabled}
           setEnabled={setCodeInterpreterEnabled}
         /> */}
-        <PanelConfig
+        {/* <PanelConfig
           title="Functions"
           tooltip="Allows to use locally defined functions"
           enabled={functionsEnabled}
           setEnabled={setFunctionsEnabled}
         >
           <FunctionsView />
-        </PanelConfig>
+        </PanelConfig> */}
         {/* <PanelConfig
           title="MCP"
           tooltip="Allows to call tools via remote MCP server"
